@@ -1,0 +1,59 @@
+build:
+  description: Build and view the docs in a web browser.
+  aliases:
+    - run
+    - auto
+    - serve
+    - server
+  requires:
+    - setup
+  subcommands:
+    html:
+        description: Render the docs to disk as HTML pages.
+        aliases:
+          - html
+          - build
+    pdf:
+        long: pdf
+        description: Render the docs to a PDF file.
+  flags:
+    clean:
+      description: Remove cached document files before building.
+    verbose:
+      description: Print all commands to terminal
+
+check:
+  description: Check for problems in the documentation
+  aliases:
+    - lint
+  requires:
+    - build html
+  subcommands:
+    style:
+      description: Check for problems with spelling and style.
+    markdown:
+        description: Check for problems with Markdown formatting.
+    links:
+        description: Check for problems with hyperlinks.
+    accessibility:
+        description: Check for problems with web accessibility.
+  flags:
+    verbose:
+      description: Show all the commands run during build.
+
+clean:
+  description: Remove built docs and temporary files.
+
+setup:
+  description: Set up the docs environment.
+  aliases:
+    - install
+  flags:
+    refresh:
+      description: Completely remove the old environment first.
+
+remove:
+  description: Remove the docs environment.
+
+update:
+  description: Update the docs base.

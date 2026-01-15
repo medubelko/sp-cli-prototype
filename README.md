@@ -5,6 +5,8 @@ CLI design.
 
 Depends on [just](https://just.systems).
 
+The anatomy of the commands is described in `commands.yaml`.
+
 ## Basic usage
 
 Install from the script, then follow along in the terminal.
