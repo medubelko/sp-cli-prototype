@@ -20,7 +20,8 @@ if [ $REMOVE == "true" ]; then
 elif [ ! -e $TARGET/just ]; then
     echo "Installing 'just' to $TARGET..."
     curl --proto '=https' --tlsv1.2 -sSf https://just.systems/install.sh | sudo bash -s -- --to $TARGET
+    clear
     just help
-else 
+else
     just help
 fi
