@@ -1,3 +1,5 @@
+# Anatomy/schema for the commands. This file isn't used at the moment.
+
 build:
   description: Build and view the docs in a web browser.
   aliases:
