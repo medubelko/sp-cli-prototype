@@ -231,6 +231,10 @@ auto *args:
     @just build {{args}}
 
 [private]
+run *args:
+    @just build {{args}}
+
+[private]
 serve *args:
     @just build {{args}}
 
