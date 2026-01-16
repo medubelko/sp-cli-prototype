@@ -7,7 +7,7 @@ Depends on [just](https://just.systems).
 
 ## Basic usage
 
-Install from the script, then follow along in the terminal.
+Run the main script, then follow along in the terminal.
 
 ## Install
 
