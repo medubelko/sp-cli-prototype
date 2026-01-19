@@ -7,15 +7,17 @@ Depends on [just](https://just.systems).
 
 ## Basic usage
 
-Run the main script, then follow along in the terminal.
-
-## Install
+Run the main script:
 
 ```bash
 ./proto.sh
 ```
 
-## Uninstall
+Then, follow along in the terminal.
+
+## Cleanup
+
+After testing, if you'd like to remove just, run:
 
 ```bash
 ./proto.sh -r
